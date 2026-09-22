@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Carts — five classic games, one pocket arcade</title>
+<meta name="description" content="Pocket Carts is an iPhone arcade with five classic games: 2048, Snake, Block Drop, Grid Fill and Minesweeper. Shared coins and revives, a daily challenge, and Game Center leaderboards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#1A1230;
+    --plum-raised:#251A42;
+    --plum-line:#3A2C5E;
+    --cream:#FFF4E0;
+    --dusk:#A99BC9;
+    --marigold:#FFB627;
+    --mint:#3DDC97;
+    --coral:#FF5E5B;
+    --sky:#4EA8FF;
+    --lilac:#B388FF;
+    --display:"Fredoka","Trebuchet MS",sans-serif;
+    --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--plum);
+    color:var(--cream);
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+  a{color:var(--sky)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+
+  header{padding:4.5rem 0 3rem}
+  h1{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(2.6rem,8vw,4.5rem);
+    line-height:1.02;
+    letter-spacing:-.01em;
+    margin:0 0 1rem;
+  }
+  .lede{font-size:1.2rem;color:var(--dusk);max-width:34rem;margin:0}
+
+  .shelf{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));
+    gap:1rem;
+    padding:1rem 0 4rem;
+  }
+  .cart{
+    background:var(--plum-raised);
+    border:1px solid var(--plum-line);
+    border-radius:14px 14px 6px 6px;
+    padding:0 0 1rem;
+    overflow:hidden;
+  }
+  .cart .label{
+    height:.6rem;
+    display:block;
+  }
+  .cart h2{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:1.15rem;
+    margin:1rem 1rem .35rem;
+  }
+  .cart p{margin:0 1rem;font-size:.95rem;color:var(--dusk);line-height:1.45}
+
+  section{padding:0 0 3.5rem}
+  h3{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:1.55rem;
+    margin:0 0 .6rem;
+  }
+  section p{max-width:38rem;margin:0 0 1rem}
+  .rule{border:0;border-top:1px solid var(--plum-line);margin:0 0 3rem}
+
+  footer{
+    border-top:1px solid var(--plum-line);
+    padding:2rem 0 3.5rem;
+    color:var(--dusk);
+    font-size:.95rem;
+  }
+  footer a{color:var(--dusk)}
+  footer p{margin:.3rem 0}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Five classic games.<br>One pocket arcade.</h1>
+  <p class="lede">Every mode is its own cartridge, but the coins, the revives and the daily challenge are shared. Play offline, on iPhone.</p>
+</header>
+
+<div class="wrap">
+  <div class="shelf">
+    <div class="cart">
+      <span class="label" style="background:var(--marigold)"></span>
+      <h2>2048</h2>
+      <p>Slide and merge tiles to reach the highest number.</p>
+    </div>
+    <div class="cart">
+      <span class="label" style="background:var(--mint)"></span>
+      <h2>Snake</h2>
+      <p>Grow as long as you can without folding in on yourself.</p>
+    </div>
+    <div class="cart">
+      <span class="label" style="background:var(--sky)"></span>
+      <h2>Block Drop</h2>
+      <p>Stack falling pieces and clear rows before they reach the top.</p>
+    </div>
+    <div class="cart">
+      <span class="label" style="background:var(--lilac)"></span>
+      <h2>Grid Fill</h2>
+      <p>Fit shapes onto the board and clear full lines.</p>
+    </div>
+    <div class="cart">
+      <span class="label" style="background:var(--coral)"></span>
+      <h2>Minesweeper</h2>
+      <p>Read the numbers and flag the mines, across three difficulties.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <hr class="rule">
+
+  <section>
+    <h3>One economy, not five apps</h3>
+    <p>Coins and revives carry across every mode. Earn coins in Snake, spend them on a revive in Minesweeper. When a run ends, a revive keeps it going, and each game revives you in the way that game needs: clearing your fullest rows, rewinding a step, or flagging the mine you just hit.</p>
+  </section>
+
+  <section>
+    <h3>A new challenge every morning</h3>
+    <p>Everyone gets the same challenge each day, and the game it lands on rotates. Finish it for coins, and keep the streak alive for free revives.</p>
+  </section>
+
+  <section>
+    <h3>Leaderboards worth chasing</h3>
+    <p>Every mode has its own Game Center board, with separate Minesweeper times for Easy, Medium and Hard.</p>
+  </section>
+
+  <section>
+    <h3>Plays anywhere</h3>
+    <p>No account, no sign-up, no internet needed. Scores, coins and revives live on your device. Sound effects follow the silent switch, so the music you were already listening to keeps playing.</p>
+  </section>
+</div>
+
+<footer class="wrap">
+  <p>Pocket Carts is made by Devon Leedy in Sioux Falls, South Dakota.</p>
+  <p><a href="pocket-carts-support.html">Support</a> &nbsp;·&nbsp; <a href="pocket-carts-privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="mailto:leedy308@gmail.com">leedy308@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
