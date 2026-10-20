@@ -59,6 +59,19 @@
     padding: 8px 14px; border-radius: 999px;
   }
   .icon-text { display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--accent); }
+  .group { margin-bottom: 12px; }
+  .group .app { margin-bottom: 0; border-radius: 16px 16px 0 0; }
+  .more {
+    display: flex; gap: 0;
+    background: var(--card); border: 1px solid var(--border); border-top: none;
+    border-radius: 0 0 16px 16px; overflow: hidden;
+  }
+  .more a {
+    flex: 1; text-align: center; padding: 12px 8px; min-height: 44px;
+    color: var(--muted); text-decoration: none; font-size: 14px;
+  }
+  .more a + a { border-left: 1px solid var(--border); }
+  .more a:hover, .more a:focus-visible { background: var(--card-hover); color: var(--text); }
   .soon { opacity: .75; }
   .soon .cta { background: transparent; color: var(--muted); border: 1px solid var(--border); }
 
@@ -89,6 +102,7 @@
 
   <h2>Apps</h2>
 
+  <div class="group">
   <a class="app" href="https://apps.apple.com/us/app/pocket-carts/id6814605442">
     <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/31/9e/9a/319e9aff-20a1-744e-20fe-19b676985204/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="">
     <div class="info">
@@ -97,7 +111,14 @@
     </div>
     <span class="cta">Get</span>
   </a>
+    <nav class="more" aria-label="Pocket Carts links">
+      <a href="/pocket-carts.html">About</a>
+      <a href="/pocket-carts-support.html">Support</a>
+      <a href="/pocket-carts-privacy.html">Privacy</a>
+    </nav>
+  </div>
 
+  <div class="group">
   <a class="app" href="https://apps.apple.com/us/app/applied-job-search-tracker/id6812588170">
     <img class="icon" src="/applied-icon.png" alt="">
     <div class="info">
@@ -106,6 +127,11 @@
     </div>
     <span class="cta">Get</span>
   </a>
+    <nav class="more" aria-label="Applied links">
+      <a href="/">About</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
 
   <div class="app soon">
     <div class="icon icon-text" aria-hidden="true">ST</div>
@@ -128,9 +154,7 @@
     </a>
   </nav>
 
-  <footer>
-    <a href="/privacy.html">Privacy Policy</a>
-  </footer>
+  <footer>© 2026 Leedy Labs</footer>
 </main>
 </body>
 </html>
