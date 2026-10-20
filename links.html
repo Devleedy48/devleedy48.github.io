@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leedy Labs</title>
+<meta name="description" content="Indie iOS apps by Leedy Labs — Pocket Carts, Applied, and more. Free on the App Store.">
+<meta property="og:title" content="Leedy Labs">
+<meta property="og:description" content="Indie iOS apps built after warehouse shifts.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  :root {
+    --bg: #11161C;
+    --card: #1A2129;
+    --card-hover: #222B35;
+    --border: #2A333D;
+    --text: #F4F6F8;
+    --muted: #A7B0BA;
+    --accent: #3DDC97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px 40px;
+  }
+  main { width: 100%; max-width: 440px; }
+
+  header { text-align: center; margin-bottom: 32px; }
+  .logo { width: 96px; height: 96px; border-radius: 50%; background: var(--bg); border: 2px solid var(--border); display: block; margin: 0 auto 16px; }
+  h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .tagline { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin: 28px 0 12px; font-weight: 500; }
+
+  .app {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 14px; margin-bottom: 12px;
+    text-decoration: none; color: inherit;
+    transition: background .15s, transform .15s;
+  }
+  a.app:hover, a.app:focus-visible { background: var(--card-hover); transform: translateY(-1px); }
+  a.app:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .icon { width: 56px; height: 56px; border-radius: 13px; flex-shrink: 0; object-fit: cover; background: var(--border); }
+  .info { flex: 1; min-width: 0; }
+  .name { font-weight: 700; font-size: 17px; }
+  .desc { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .cta {
+    flex-shrink: 0; font-size: 13px; font-weight: 700;
+    background: var(--accent); color: #0B1F15;
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .icon-text { display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--accent); }
+  .soon { opacity: .75; }
+  .soon .cta { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+
+  .socials { display: flex; justify-content: center; gap: 12px; margin-top: 28px; }
+  .socials a {
+    width: 48px; height: 48px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+  }
+  .socials a:hover, .socials a:focus-visible { background: var(--card-hover); }
+  .socials svg { width: 22px; height: 22px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="logo" viewBox="0 0 1080 1080" role="img" aria-label="Leedy Labs logo">
+      <rect width="1080" height="1080" fill="#11161C"/>
+      <path d="M300 260 H420 V700 H640 V820 H300 Z" fill="#F4F6F8"/>
+      <path d="M780 820 H660 V380 H440 V260 H780 Z" fill="#3DDC97"/>
+    </svg>
+    <h1>Leedy Labs</h1>
+    <p class="tagline">Indie iOS apps built after warehouse shifts</p>
+  </header>
+
+  <h2>Apps</h2>
+
+  <a class="app" href="https://apps.apple.com/us/app/pocket-carts/id6814605442">
+    <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/31/9e/9a/319e9aff-20a1-744e-20fe-19b676985204/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="">
+    <div class="info">
+      <div class="name">Pocket Carts</div>
+      <div class="desc">Classic arcade games in one app</div>
+    </div>
+    <span class="cta">Get</span>
+  </a>
+
+  <a class="app" href="https://apps.apple.com/us/app/applied-job-search-tracker/id6812588170">
+    <img class="icon" src="/applied-icon.png" alt="">
+    <div class="info">
+      <div class="name">Applied</div>
+      <div class="desc">Track every job application</div>
+    </div>
+    <span class="cta">Get</span>
+  </a>
+
+  <div class="app soon">
+    <div class="icon icon-text" aria-hidden="true">ST</div>
+    <div class="info">
+      <div class="name">StockTracker</div>
+      <div class="desc">Practice trading with paper money</div>
+    </div>
+    <span class="cta">Soon</span>
+  </div>
+
+  <nav class="socials" aria-label="Social media">
+    <a href="https://www.tiktok.com/@leedylabs" aria-label="Leedy Labs on TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/leedylabs" aria-label="Leedy Labs on Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="mailto:leedy308@gmail.com" aria-label="Email Leedy Labs">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+  </nav>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
